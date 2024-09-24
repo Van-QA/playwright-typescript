@@ -1,6 +1,6 @@
 import type { Page } from 'playwright';
 import {BasePage} from "./basePage";
-import {CommonActions} from "./commonActions";
+import {CommonActions} from "../helpers/commonActions";
 import path from 'path';
 import {request} from "@playwright/test";
 

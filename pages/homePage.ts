@@ -1,6 +1,6 @@
 import type {Page} from 'playwright';
 import {BasePage} from "./basePage";
-import {CommonActions} from "./commonActions";
+import {CommonActions} from "../helpers/commonActions";
 
 export class HomePage extends BasePage {
   constructor(

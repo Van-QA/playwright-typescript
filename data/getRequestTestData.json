@@ -1,0 +1,29 @@
+{
+  "getBlockNumberTestCases": [
+    {
+      "name": "Valid API Key - Get latest block number",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/latestBlockNumber/eth",
+      "headers": {
+        "X-API-Key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjdmZjEzYWVjLTZmYTktNDM0OC04ZjBlLTQ0M2FhYzlmMGIwYiIsIm9yZ0lkIjoiNDA5MTQ1IiwidXNlcklkIjoiNDIwNDMwIiwidHlwZUlkIjoiMzFjOTRhMDEtZTY3Mi00Y2M3LWFlNTgtNjlkZWYzOTc2MmVhIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MjcwODczMjAsImV4cCI6NDg4Mjg0NzMyMH0.Shima5iwS6qhBiV5XydJ3aaQPO8fl8bznh1rR5N5v_o"
+      },
+      "expectedStatusCode": 200
+    },
+    {
+      "name": "Invalid API Key - Unauthorized",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/latestBlockNumber/eth",
+      "headers": {
+        "X-API-Key": "invalid_api_key"
+      },
+      "expectedStatusCode": 401
+    },
+    {
+      "name": "Missing API Key - Forbidden",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/latestBlockNumber/eth",
+      "headers": {},
+      "expectedStatusCode": 403
+    }
+  ]
+}

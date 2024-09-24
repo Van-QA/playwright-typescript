@@ -1,5 +1,5 @@
 import type {Page} from 'playwright';
-import {CommonActions} from "./commonActions";
+import {CommonActions} from "../helpers/commonActions";
 import {BasePage} from "./basePage";
 
 export class NodePage extends BasePage {
