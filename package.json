@@ -1,0 +1,16 @@
+{
+  "name": "playwright-page-object",
+  "version": "1.0.0",
+  "description": "Page Object Model with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "Van Pham",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.5",
+    "playwright": "^1.47.0"
+  }
+}

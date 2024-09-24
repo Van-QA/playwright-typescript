@@ -1,0 +1,659 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AGteOyrdMa8AXzQd0Fi9Uwb76BD6sQsfU3qL-QqVW1Y2LZyCtC5I6x1BQl2r54BxC8SPtAixC2afD33RLuPSbmQ",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1742652105.159037,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_uetsid",
+      "value": "5baa191079ae11efad1a5520d53cae00",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1727183924,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetvid",
+      "value": "5baa5eb079ae11efa8d249b959a21862",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1760793524,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MUID",
+      "value": "2DE8DA3B3ACC632D16AFCF383BC46249",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1760793526.463691,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".bat.bing.com",
+      "path": "/",
+      "expires": 1727702324.180215,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "feathery-user-id-8db16f07-e2b5-4eb6-8bce-6084bd8c795b",
+      "value": "1e2cee93-945b-465e-8de6-95b71fe9302a",
+      "domain": "admin.moralis.io",
+      "path": "/",
+      "expires": 1758633524.456431,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1710215827.1727097525",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1761657524.580985,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1398005737.1727097525",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1734873525,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "8a1d4d0d947e463990b023d131be71a3.20240923.20250923",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1758633524.920061,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "1s763vn%7C2%7Cfpf%7C0%7C1727",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1758633525,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1727702326.46375,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "2DE8DA3B3ACC632D16AFCF383BC46249",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1760793526.463774,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "2DE8DA3B3ACC632D16AFCF383BC46249",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1760793526.580797,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1727702326.580821,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ajs_anonymous_id",
+      "value": "19270ac6-f73d-410f-9f56-c642744cf297",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1758633536,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-id-gy4tissf",
+      "value": "df48488a-7407-4848-8ea8-d02de3b0a3b8",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1750427527,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-session-gy4tissf",
+      "value": "",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1727702327,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-device-id-gy4tissf",
+      "value": "bb3fbd07-66e2-48c3-b54a-ac5d0343a1f4",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1750427527,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "li_sugr",
+      "value": "538f8e89-4ba0-4f23-b30b-01c3a1ea8252",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1734873529.5921,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&f9c21d21-043b-428a-8cb0-f821e4606bf6\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1758633530.592262,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=VGST02:s=V:r=V:a=V:p=V:g=3338:u=1:x=1:i=1727097527:t=1727183927:v=2:sig=AQFPJD5ibKm3R7dTRlwA5Guq0uj6HN5v\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1727183927.984923,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "UserMatchHistory",
+      "value": "AQLQFK0prs672AAAAZIfCN-Ve2-nqBmrhDq0D9Im65fTOu5ROQLqSH112LZ-vyt-B540fFkRMpWMTg",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1729689528.332861,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AnalyticsSyncHistory",
+      "value": "AQKwD5TuPJeqswAAAZIfCN-VVWQothBhnOrNRdU-YpjziEOanCuhtZwWsAGKBYr9skc3CVwlmd0fw7REzWbJGQ",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1729689528.332876,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "muc_ads",
+      "value": "e2933ee3-06e0-4262-b20a-c6ab0014d48e",
+      "domain": ".t.co",
+      "path": "/",
+      "expires": 1761657528.450799,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "personalization_id",
+      "value": "\"v1_s4b8gr2ysCSsznqLYzCP1w==\"",
+      "domain": ".twitter.com",
+      "path": "/",
+      "expires": 1761657528.59213,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value": "\"v=1&20240923131848812eda84-5dd9-4264-868e-7a66afb1335bAQFlo-CCqtDMsBkmoUWicaYNtelVR_HI\"",
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "expires": 1758633528.715458,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__hstc",
+      "value": "121228887.f78bb320793e3d2f0965dc8c5a557fc8.1727097528853.1727097528853.1727097528853.1",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1742649528,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "hubspotutk",
+      "value": "f78bb320793e3d2f0965dc8c5a557fc8",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1742649528,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__hssrc",
+      "value": "1",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cfuvid",
+      "value": "EylqHvZYxmuXPNQN4fi_pdMqTwTh8auykfIfz8id3Dw-1727097529813-0.0.1.1-604800000",
+      "domain": ".hubspot.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ajs_user_id",
+      "value": "420430",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1758633536,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_VYPYJZYKCB",
+      "value": "GS1.1.1727097523.1.1.1727097537.0.0.0",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1761657537.26126,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "1sd4tkc%7C1727097540013%7C2%7C1%7Cw.clarity.ms%2Fcollect",
+      "domain": ".moralis.io",
+      "path": "/",
+      "expires": 1727183940,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "feathery-user-id-8db16f07-e2b5-4eb6-8bce-6084bd8c795b",
+      "value": "2dcc5bdb-4183-4d93-b676-1f8a369a24c6",
+      "domain": "admin.moralis.com",
+      "path": "/",
+      "expires": 1758636078.079875,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "MSPTC",
+      "value": "hhlo_0hD9if5--4R0FKZMuf5lNMl2ulKtJw-xu0doKA",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1760796077.650302,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.198368657.1727100078",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1761660078.356339,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.59152005.1727100078",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1734876078,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetsid",
+      "value": "4da63fc079b411efbb9f174f250439bc",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1727186477,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetvid",
+      "value": "4da6819079b411efbe79a78c7df8e80d",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1760796077,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clck",
+      "value": "1ci8qsn%7C2%7Cfpf%7C0%7C1727",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1758636078,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUkcKq8OyMVfVwx9Q8XkvJAdQb-3q_zHvGVGpWx3OI4HT2qk8meUjZEEu5Si",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1761660078.526002,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ajs_anonymous_id",
+      "value": "c9ae0919-81c2-478f-8d3f-e7540dd4a235",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1758636107,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-id-gy4tissf",
+      "value": "961b41f6-897e-4d82-9c60-ed1f69602871",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1750430080,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-session-gy4tissf",
+      "value": "",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1727704880,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "intercom-device-id-gy4tissf",
+      "value": "001a8de9-b2a2-416a-9a1d-304bdf278672",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1750430080,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ajs_user_id",
+      "value": "420430",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1758636107,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_VYPYJZYKCB",
+      "value": "GS1.1.1727100077.1.1.1727100108.0.0.0",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1761660108.19489,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "1omuuxg%7C1727100108804%7C2%7C1%7Cw.clarity.ms%2Fcollect",
+      "domain": ".moralis.com",
+      "path": "/",
+      "expires": 1727186508,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://admin.moralis.com",
+      "localStorage": [
+        {
+          "name": "projectStore",
+          "value": "{\"state\":{\"projects\":[{\"id\":\"31c94a01-e672-4cc7-ae58-69def39762ea\",\"name\":\"project_ptvan0311@gmail.com\",\"organizationId\":409145,\"isDefault\":true}],\"selectedId\":\"31c94a01-e672-4cc7-ae58-69def39762ea\",\"usageToggle\":\"api\",\"secretKey\":\"\",\"isSwitchingProject\":false,\"nextWorkspace\":\"\"},\"version\":0}"
+        },
+        {
+          "name": "intercom.intercom-state-gy4tissf",
+          "value": "{\"app\":{\"openConfig\":{\"layout\":\"default\",\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Home\",\"navigationLabel\":\"Home\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Messages\",\"navigationLabel\":\"Messages\",\"badge\":null},{\"type\":\"tickets\",\"label\":\"Tickets\",\"navigationLabel\":\"Tickets\",\"badge\":null},{\"type\":\"help\",\"label\":\"Help\",\"navigationLabel\":\"Help\",\"badge\":null},{\"type\":\"news\",\"label\":\"News\",\"navigationLabel\":\"News\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Moralis\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"launcherSettingsEndpoint\":false,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true},\"helpCenterSiteUrl\":\"https://help.moralis.io\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":true},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":true},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#3f51b5\",\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":true,\"launcherLogoUrl\":\"https://downloads.intercomcdn.eu/i/o/1293/df65c564b4f61f6edb9542a0/cc82e014ae2a27e893aa8c71250c3262.png\",\"secondaryColor\":\"#3f51b5\",\"showLauncher\":true,\"updatedAt\":1727031600,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"role\":\"visitor\",\"locale\":\"en\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1727100112193},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}"
+        },
+        {
+          "name": "ajs_user_traits",
+          "value": "{\"email\":\"ptvan0311@gmail.com\"}"
+        },
+        {
+          "name": "authStore",
+          "value": "{\"state\":{\"hasMarketingSubscribe\":true,\"hasTermsAndConditions\":true,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiJmMzg2NjFhNy1iOTMxLTQ3NTQtODg5MS0xZTdhZmY1ZDYzNDMiLCJlbWFpbCI6InB0dmFuMDMxMUBnbWFpbC5jb20iLCJ1c2VySWQiOjQyMDQzMCwib3JnSWQiOjQwOTE0NSwib3JnUm9sZUlkIjoxLCJwcm9qZWN0SWQiOiIzMWM5NGEwMS1lNjcyLTRjYzctYWU1OC02OWRlZjM5NzYyZWEiLCJrZWVwbWVMb2dnZWRpbiI6dHJ1ZSwiaXMyRkFFbmFibGVkIjpmYWxzZSwiZW1haWxfdmFsaWRhdGVkIjoxLCJoYXNBY2NlcHRlZFRlcm1zIjoxLCJpc1Bob25lVmVyaWZpZWQiOjIsInJvbGVzIjpbXSwiaWF0IjoxNzI3MTAwMTA3LCJleHAiOjE3Mjc3MDQ5MDd9.Je6G3EzO_tD3nqvJCt9RHAaThwbBdQf6dpdhlA68OMQ\",\"keepLoggedIn\":false},\"version\":0}"
+        },
+        {
+          "name": "_uetvid_exp",
+          "value": "Sat, 18 Oct 2025 14:01:17 GMT"
+        },
+        {
+          "name": "playgroundStore",
+          "value": "{\"state\":{\"id\":0},\"version\":0}"
+        },
+        {
+          "name": "_uetsid",
+          "value": "4da63fc079b411efbb9f174f250439bc"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AGteOyofY640fP2MbWZiX3bbVJhphm8L_BYHwR1UT-KzsAJdXqgAYd5Suf8cZ5kIPz12Ju7UedjUFdPesC3Ze-3K6B0lWCCzOZl8jg"
+        },
+        {
+          "name": "wagmi.store",
+          "value": "\"{\\\"state\\\":{},\\\"version\\\":1}\""
+        },
+        {
+          "name": "userStore",
+          "value": "{\"state\":{\"acceptedCategories\":[],\"email\":\"ptvan0311@gmail.com\",\"currentOrganizationId\":409145,\"email_validated\":1,\"is2FAEnabled\":false,\"hasAcceptedTerms\":1,\"isPhoneVerified\":2,\"isBlocked\":0,\"id\":420430,\"organizations\":[{\"id\":409145,\"name\":\"default_ptvan0311@gmail.com\",\"createdAt\":\"2024-09-23T10:28:39.000Z\",\"updatedAt\":\"2024-09-23T10:28:39.000Z\",\"migratedToBillingCoord\":1}],\"phone\":null,\"createdAt\":\"2024-09-23T10:28:39.000Z\",\"name\":\"Van Pham\",\"isMonthly\":0,\"isOnBillingCoordinator\":true,\"currentProjectId\":\"31c94a01-e672-4cc7-ae58-69def39762ea\",\"updatedAt\":\"2024-09-23T10:29:29.000Z\",\"planDetails\":{\"name\":\"Free Plan\",\"price\":0,\"features\":[\"Access to All Networks\",\"1500 CU/s API throughput\",\"40k daily compute units\",\"100 CU/s RPC Node Throughput\",\"Streams API\",\"2 team members (Owner, and 1 invited member)\",\"Access to 2 RPC Nodes\",\"Wallet API, Token API, Price API\",\"Market Insights API\"],\"tag\":\"free-plan-daily\",\"addons\":{\"apiTotalComputeUnits\":{\"static\":false,\"limit\":40000,\"id\":null},\"apiRequestsPerSecond\":{\"static\":true,\"limit\":1500,\"id\":null},\"streamMaxNumberOfAddresses\":{\"static\":true,\"limit\":10000,\"id\":null},\"streamListenAllAddresses\":{\"static\":true,\"limit\":1,\"id\":null},\"streamNumberOfRecords\":{\"static\":false,\"limit\":300,\"id\":null},\"streamWebhookRetries\":{\"static\":true,\"limit\":0,\"id\":null},\"streamFailedPayloadRetention\":{\"static\":true,\"limit\":300,\"id\":null},\"teamMembers\":{\"static\":true,\"limit\":2,\"id\":null},\"streamIncludeAllTxLogs\":{\"static\":true,\"limit\":0,\"id\":null},\"nodeNumberOfNodes\":{\"static\":true,\"limit\":2,\"id\":null},\"nodeRequestsPerSecond\":{\"static\":true,\"limit\":100,\"id\":null},\"streamFetchTokenPrices\":{\"static\":true,\"limit\":0,\"id\":null}},\"isMonthly\":true,\"id\":null}},\"version\":0}"
+        },
+        {
+          "name": "_uetsid_exp",
+          "value": "Tue, 24 Sep 2024 14:01:17 GMT"
+        },
+        {
+          "name": "team-store",
+          "value": "{\"state\":{\"isSwitchingTeam\":false},\"version\":0}"
+        },
+        {
+          "name": "_uetvid",
+          "value": "4da6819079b411efbe79a78c7df8e80d"
+        },
+        {
+          "name": "dappStore",
+          "value": "{\"state\":{\"amountOfLegacyServers\":0,\"servers\":[]},\"version\":0}"
+        },
+        {
+          "name": "ajs_anonymous_id",
+          "value": "\"c9ae0919-81c2-478f-8d3f-e7540dd4a235\""
+        },
+        {
+          "name": "ajs_user_id",
+          "value": "\"420430\""
+        },
+        {
+          "name": "wagmi.cache",
+          "value": "{\"buster\":\"\",\"timestamp\":1727100078936,\"clientState\":{\"mutations\":[],\"queries\":[{\"state\":{\"dataUpdateCount\":0,\"dataUpdatedAt\":0,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"loading\",\"fetchStatus\":\"idle\"},\"queryKey\":[{\"entity\":\"ensAvatar\",\"chainId\":1}],\"queryHash\":\"[{\\\"chainId\\\":1,\\\"entity\\\":\\\"ensAvatar\\\"}]\"},{\"state\":{\"dataUpdateCount\":0,\"dataUpdatedAt\":0,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"loading\",\"fetchStatus\":\"idle\"},\"queryKey\":[{\"entity\":\"ensName\",\"chainId\":1}],\"queryHash\":\"[{\\\"chainId\\\":1,\\\"entity\\\":\\\"ensName\\\"}]\"},{\"state\":{\"dataUpdateCount\":0,\"dataUpdatedAt\":0,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"loading\",\"fetchStatus\":\"idle\"},\"queryKey\":[{\"entity\":\"balance\",\"chainId\":1}],\"queryHash\":\"[{\\\"chainId\\\":1,\\\"entity\\\":\\\"balance\\\"}]\"}]}}"
+        }
+      ]
+    },
+    {
+      "origin": "https://admin.moralis.io",
+      "localStorage": [
+        {
+          "name": "projectStore",
+          "value": "{\"state\":{\"projects\":[{\"id\":\"31c94a01-e672-4cc7-ae58-69def39762ea\",\"name\":\"project_ptvan0311@gmail.com\",\"organizationId\":409145,\"isDefault\":true}],\"selectedId\":\"31c94a01-e672-4cc7-ae58-69def39762ea\",\"usageToggle\":\"api\",\"secretKey\":\"\",\"isSwitchingProject\":false,\"nextWorkspace\":\"\"},\"version\":0}"
+        },
+        {
+          "name": "intercom.intercom-state-gy4tissf",
+          "value": "{\"app\":{\"openConfig\":{\"layout\":\"default\",\"openTo\":\"home\",\"spaces\":[{\"type\":\"home\",\"label\":\"Home\",\"navigationLabel\":\"Home\",\"badge\":null},{\"type\":\"messages\",\"label\":\"Messages\",\"navigationLabel\":\"Messages\",\"badge\":null},{\"type\":\"tickets\",\"label\":\"Tickets\",\"navigationLabel\":\"Tickets\",\"badge\":null},{\"type\":\"help\",\"label\":\"Help\",\"navigationLabel\":\"Help\",\"badge\":null},{\"type\":\"news\",\"label\":\"News\",\"navigationLabel\":\"News\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":true,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Moralis\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"launcherSettingsEndpoint\":false,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true},\"helpCenterSiteUrl\":\"https://help.moralis.io\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":true},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":true},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#3f51b5\",\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":true,\"launcherLogoUrl\":\"https://downloads.intercomcdn.eu/i/o/1293/df65c564b4f61f6edb9542a0/cc82e014ae2a27e893aa8c71250c3262.png\",\"secondaryColor\":\"#3f51b5\",\"showLauncher\":true,\"updatedAt\":1727031600,\"verticalPadding\":20,\"isLoading\":false},\"user\":{\"role\":\"visitor\",\"locale\":\"en\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1727097538057},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}"
+        },
+        {
+          "name": "authStore",
+          "value": "{\"state\":{\"hasMarketingSubscribe\":true,\"hasTermsAndConditions\":true,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiIzNTAzNTg1NC03YmQ3LTQyYTAtOTg5Yy0zYzU2MDdlZjdlMjEiLCJlbWFpbCI6InB0dmFuMDMxMUBnbWFpbC5jb20iLCJ1c2VySWQiOjQyMDQzMCwib3JnSWQiOjQwOTE0NSwib3JnUm9sZUlkIjoxLCJwcm9qZWN0SWQiOiIzMWM5NGEwMS1lNjcyLTRjYzctYWU1OC02OWRlZjM5NzYyZWEiLCJrZWVwbWVMb2dnZWRpbiI6dHJ1ZSwiaXMyRkFFbmFibGVkIjpmYWxzZSwiZW1haWxfdmFsaWRhdGVkIjoxLCJoYXNBY2NlcHRlZFRlcm1zIjoxLCJpc1Bob25lVmVyaWZpZWQiOjIsInJvbGVzIjpbXSwiaWF0IjoxNzI3MDk3NTM2LCJleHAiOjE3Mjc3MDIzMzZ9.fBFzJ46Ag5FTS_vZovls-u8ZwJ0J1qJUmUxCpFqTcdc\",\"keepLoggedIn\":false},\"version\":0}"
+        },
+        {
+          "name": "_uetvid_exp",
+          "value": "Sat, 18 Oct 2025 13:18:44 GMT"
+        },
+        {
+          "name": "playgroundStore",
+          "value": "{\"state\":{\"id\":0},\"version\":0}"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AGteOyrek-Mm8ck3sLRRjX902limek5pocgbYy_84lDbrI3YqwmHuRxhdz5FbwzNOanqG90ZMj8i0zgdC7CqNALh0QR5t_fhYbkZYQ"
+        },
+        {
+          "name": "_uetsid",
+          "value": "5baa191079ae11efad1a5520d53cae00"
+        },
+        {
+          "name": "wagmi.store",
+          "value": "\"{\\\"state\\\":{},\\\"version\\\":1}\""
+        },
+        {
+          "name": "userStore",
+          "value": "{\"state\":{\"acceptedCategories\":[],\"email\":\"ptvan0311@gmail.com\",\"currentOrganizationId\":409145,\"email_validated\":1,\"is2FAEnabled\":false,\"hasAcceptedTerms\":1,\"isPhoneVerified\":2,\"isBlocked\":0,\"id\":420430,\"organizations\":[{\"id\":409145,\"name\":\"default_ptvan0311@gmail.com\",\"createdAt\":\"2024-09-23T10:28:39.000Z\",\"updatedAt\":\"2024-09-23T10:28:39.000Z\",\"migratedToBillingCoord\":1}],\"phone\":null,\"createdAt\":\"2024-09-23T10:28:39.000Z\",\"name\":\"Van Pham\",\"isMonthly\":0,\"isOnBillingCoordinator\":true,\"currentProjectId\":\"31c94a01-e672-4cc7-ae58-69def39762ea\",\"updatedAt\":\"2024-09-23T10:29:29.000Z\",\"planDetails\":{\"name\":\"Free Plan\",\"price\":0,\"features\":[\"Access to All Networks\",\"1500 CU/s API throughput\",\"40k daily compute units\",\"100 CU/s RPC Node Throughput\",\"Streams API\",\"2 team members (Owner, and 1 invited member)\",\"Access to 2 RPC Nodes\",\"Wallet API, Token API, Price API\",\"Market Insights API\"],\"tag\":\"free-plan-daily\",\"addons\":{\"apiTotalComputeUnits\":{\"static\":false,\"limit\":40000,\"id\":null},\"apiRequestsPerSecond\":{\"static\":true,\"limit\":1500,\"id\":null},\"streamMaxNumberOfAddresses\":{\"static\":true,\"limit\":10000,\"id\":null},\"streamListenAllAddresses\":{\"static\":true,\"limit\":1,\"id\":null},\"streamNumberOfRecords\":{\"static\":false,\"limit\":300,\"id\":null},\"streamWebhookRetries\":{\"static\":true,\"limit\":0,\"id\":null},\"streamFailedPayloadRetention\":{\"static\":true,\"limit\":300,\"id\":null},\"teamMembers\":{\"static\":true,\"limit\":2,\"id\":null},\"streamIncludeAllTxLogs\":{\"static\":true,\"limit\":0,\"id\":null},\"nodeNumberOfNodes\":{\"static\":true,\"limit\":2,\"id\":null},\"nodeRequestsPerSecond\":{\"static\":true,\"limit\":100,\"id\":null},\"streamFetchTokenPrices\":{\"static\":true,\"limit\":0,\"id\":null}},\"isMonthly\":true,\"id\":null}},\"version\":0}"
+        },
+        {
+          "name": "_uetsid_exp",
+          "value": "Tue, 24 Sep 2024 13:18:44 GMT"
+        },
+        {
+          "name": "_uetvid",
+          "value": "5baa5eb079ae11efa8d249b959a21862"
+        },
+        {
+          "name": "team-store",
+          "value": "{\"state\":{\"isSwitchingTeam\":false},\"version\":0}"
+        },
+        {
+          "name": "dappStore",
+          "value": "{\"state\":{\"amountOfLegacyServers\":0,\"servers\":[]},\"version\":0}"
+        },
+        {
+          "name": "li_adsId",
+          "value": "35e831c3-49f6-4f99-8feb-d3060f22b4eb"
+        },
+        {
+          "name": "ajs_anonymous_id",
+          "value": "\"19270ac6-f73d-410f-9f56-c642744cf297\""
+        },
+        {
+          "name": "ajs_user_id",
+          "value": "\"420430\""
+        },
+        {
+          "name": "ajs_user_traits",
+          "value": "{\"email\":\"ptvan0311@gmail.com\"}"
+        },
+        {
+          "name": "wagmi.cache",
+          "value": "{\"buster\":\"\",\"timestamp\":1727097526190,\"clientState\":{\"mutations\":[],\"queries\":[{\"state\":{\"dataUpdateCount\":0,\"dataUpdatedAt\":0,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"loading\",\"fetchStatus\":\"idle\"},\"queryKey\":[{\"entity\":\"ensAvatar\",\"chainId\":1}],\"queryHash\":\"[{\\\"chainId\\\":1,\\\"entity\\\":\\\"ensAvatar\\\"}]\"},{\"state\":{\"dataUpdateCount\":0,\"dataUpdatedAt\":0,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"loading\",\"fetchStatus\":\"idle\"},\"queryKey\":[{\"entity\":\"ensName\",\"chainId\":1}],\"queryHash\":\"[{\\\"chainId\\\":1,\\\"entity\\\":\\\"ensName\\\"}]\"},{\"state\":{\"dataUpdateCount\":0,\"dataUpdatedAt\":0,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"loading\",\"fetchStatus\":\"idle\"},\"queryKey\":[{\"entity\":\"balance\",\"chainId\":1}],\"queryHash\":\"[{\\\"chainId\\\":1,\\\"entity\\\":\\\"balance\\\"}]\"}]}}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "OWp3d2hvZDlnOGpw"
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAH5V8OWP2Y_IZ5_5W7fKpwbpx3vXTMyBODjCpb9rAI4b_l8ozvge2-W3jhVPctYtF8aqBnM"
+        }
+      ]
+    }
+  ]
+}
