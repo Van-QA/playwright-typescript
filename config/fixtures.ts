@@ -1,10 +1,11 @@
 import {Browser, BrowserContext} from "@playwright/test";
 import base from "@playwright/test";
 import {Constants} from './constants'
-import {CommonActions} from '../helpers/commonActions'
 import {LoginPage} from "../pages/loginPage";
 import {HomePage} from "../pages/homePage";
 import {NodePage} from "../pages/nodePage";
+import * as dotenv from 'dotenv';
+
 
 export const TIMEOUT = Number(process.env.TIMEOUT) || Constants.TIMEOUT;
 /**
@@ -13,25 +14,22 @@ export const TIMEOUT = Number(process.env.TIMEOUT) || Constants.TIMEOUT;
  */
 export const test = base.extend<
   {
-    commonActions: CommonActions
     loginPage: LoginPage
     homePage: HomePage
     nodePage: NodePage
     browserContext: BrowserContext; // Specify the correct type for the browser context
   }
 >({
-  commonActions: async ({page}, use, testInfo) => {
-    await use(new CommonActions(page, testInfo))
+  loginPage: async ({page}, use) => {
+    await use(new LoginPage(page))
   },
-  loginPage: async ({page, commonActions}, use) => {
-    await use(new LoginPage(page, commonActions))
+  homePage: async ({page}, use) => {
+    await use(new HomePage(page))
   },
-  homePage: async ({page, commonActions}, use) => {
-    await use(new HomePage(page, commonActions))
-  },
-  nodePage: async ({page, commonActions}, use) => {
-    await use(new NodePage(page, commonActions))
+  nodePage: async ({page}, use) => {
+    await use(new NodePage(page))
   },
 })
 
 test.setTimeout(TIMEOUT)
+dotenv.config({ path: './.env' }); // Adjust path if needed

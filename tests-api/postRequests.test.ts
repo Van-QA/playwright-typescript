@@ -1,10 +1,12 @@
 import {expect, test} from '@playwright/test';
-import {apiRequest, checkResponseJSON, checkResponseTime, validateSchema} from "../helpers/apiHelper";
+import {apiRequest, checkResponseJSON, checkResponseTime, validateSchema} from "../helpers/apiHelpers";
 import * as fs from 'fs';
 import path from 'path';
+import * as dotenv from "dotenv";
 
 // Load POST test data from JSON file
 const postTestData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/postRequestTestData.json'), 'utf-8'));
+dotenv.config({ path: './.env' }); // Adjust path if needed
 
 postTestData.getBlockByNumber.forEach(testCase => {
   test(`POST API tests for block number - ${testCase.name}`, async ({request}) => {
@@ -14,7 +16,7 @@ postTestData.getBlockByNumber.forEach(testCase => {
     const startTime = Date.now();
 
     // Make the POST request using the helper
-    const response = await apiRequest(request, testCase.method, testCase.url, testCase.expectedStatusCode, {
+    const response = await apiRequest(request, testCase.method, process.env.NODE_URL || testCase.url, testCase.expectedStatusCode, {
       headers: testCase.headers,
       body: testCase.body
     });

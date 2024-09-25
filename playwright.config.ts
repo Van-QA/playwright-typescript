@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
   timeout: 10000,
 
   use: {
-    baseURL: 'https://admin.moralis.io', // Define base URL
+    baseURL: 'https://admin.moralis.io', // default URL to run test
 
     // Browser options
     headless: true,

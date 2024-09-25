@@ -1,13 +1,11 @@
 import type {Page} from 'playwright';
 import {BasePage} from "./basePage";
-import {CommonActions} from "../helpers/commonActions";
 
 export class HomePage extends BasePage {
   constructor(
     public page: Page,
-    readonly action: CommonActions
   ) {
-    super(page, action)
+    super(page)
   }
 
   async isLoggedIn() {

@@ -65,15 +65,3 @@ export function validateSchema(data: Record<string, any>, schema: Schema): boole
   }
   return true;
 }
-
-// Utility function to check response headers
-export const checkResponseHeaders = (headers, expectedHeaders) => {
-  expectedHeaders.forEach(header => {
-    expect(headers).toHaveProperty(header);
-  });
-};
-// Utility function for unauthorized access check
-export const checkUnauthorizedAccess = async (request, url) => {
-  const unauthorizedResponse = await apiRequest(request, 'GET', url, undefined, {headers: {}});
-  expect(unauthorizedResponse.status).toBe(401); // Check unauthorized access
-};
