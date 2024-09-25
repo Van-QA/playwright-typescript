@@ -1,14 +1,12 @@
 import type {Page} from 'playwright';
 import {BasePage} from "./basePage";
 
-export class HomePage extends BasePage {
+export class ApiKeysPage extends BasePage {
   constructor(
     public page: Page,
   ) {
     super(page)
+    this.defaultUrl = '/api-keys'
   }
 
-  async isLoggedIn() {
-    return !this.page.url().includes('login');
-  }
 }

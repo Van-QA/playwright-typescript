@@ -1,14 +1,14 @@
-import {expect, test} from '@playwright/test';
+import {test} from '@playwright/test';
 import {apiRequest, checkResponseJSON, checkResponseTime} from "../helpers/apiHelpers";
 import * as fs from 'fs';
 import path from 'path';
 import * as dotenv from "dotenv";
 
 // Load GET test data from JSON file
-const getTestData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/getRequestTestData.json'), 'utf-8'));
-dotenv.config({ path: './.env' }); // Adjust path if needed
+const getRequestTestData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/getRequestTestData.json'), 'utf-8'));
+dotenv.config({ path: './.env' });
 
-getTestData.getBlockNumberTestCases.forEach(testCase => {
+getRequestTestData.getBlockNumberTestCases.forEach(testCase => {
   test(`GET API tests for block number: ${testCase.name}`, async ({request}) => {
     console.log(`Running: ${testCase.name}`);
 

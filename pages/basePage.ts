@@ -1,4 +1,4 @@
-import {Page} from '@playwright/test'
+import {expect, Page} from '@playwright/test'
 import {TIMEOUT} from '../config/fixtures'
 
 export class BasePage {
@@ -7,7 +7,6 @@ export class BasePage {
   constructor(
     protected readonly page: Page,
   ) {
-
   }
 
   async visit(url = '') {
@@ -34,6 +33,7 @@ export class BasePage {
 
     let randomIndex;
 
+
     if (skipFirst && options.length > 1) {
       // Skip the first option and select randomly from the rest
       randomIndex = Math.floor(Math.random() * (options.length - 1)) + 1;
@@ -46,5 +46,19 @@ export class BasePage {
 
     const randomValue = await options[randomIndex].getAttribute('value');
     await locator.selectOption(randomValue);
+  }
+
+  /**
+   * @param method
+   * @param partialUrlPath
+   * @param expectedStatusCode
+   */
+  async waitForAPI(method: string, partialUrlPath: string, expectedStatusCode: number = 200) {
+    let response = await this.page.waitForResponse(
+      response => response.url().endsWith(partialUrlPath) && response.request().method() === method
+    );
+    // expect created successfully
+    expect(response.status()).toBe(expectedStatusCode);
+    return await response.json()
   }
 }

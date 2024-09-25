@@ -19,7 +19,11 @@ export function writeToEnvFile(key: string, value: string) {
     envContent = envContent.replace(keyRegex, `${key}=${value}`);
   } else {
     // Append new key-value pair
-    envContent += `${key}=${value}\n`;
+    // Check if there is already a trailing newline
+    if (!envContent.endsWith('\n')) {
+      envContent += '\n'; // Add a newline if not present
+    }
+    envContent += `${key}=${value}\n`; // Append the new key-value pair
   }
 
   // Write the updated content back to the .env file

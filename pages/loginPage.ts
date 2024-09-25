@@ -9,6 +9,7 @@ export class LoginPage extends BasePage {
     public page: Page,
   ) {
     super(page)
+    this.defaultUrl = '/login'
   }
 
   async login(email: string, password: string) {
