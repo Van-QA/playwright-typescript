@@ -1,5 +1,4 @@
 import {APIRequestContext, expect} from '@playwright/test';
-import {Schema} from "node:inspector";
 
 // Generic helper function for making API requests
 export async function apiRequest(
@@ -50,7 +49,19 @@ export const checkResponseTime = (duration, maxDuration) => {
 };
 
 // Utility function to validate response schema
-export function validateSchema(data: Record<string, any>, schema: Schema): boolean {
+export function validateSchema(data: Record<string, any>, schema = {
+  type: 'object',
+  properties: {
+    result: {
+      type: 'object',
+      properties: {
+        number: {type: 'string'} // Hexadecimal format
+      },
+      required: ['number']
+    }
+  },
+  required: ['result']
+}): boolean {
   for (const key in schema) {
     if (schema.hasOwnProperty(key)) {
       const expectedType = schema[key];

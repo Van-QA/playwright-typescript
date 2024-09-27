@@ -50,12 +50,12 @@ export class BasePage {
 
   /**
    * @param method
-   * @param partialUrlPath
+   * @param endUrlPath
    * @param expectedStatusCode
    */
-  async waitForAPI(method: string, partialUrlPath: string, expectedStatusCode: number = 200) {
+  async waitForAPI(method: string, endUrlPath: string, expectedStatusCode: number = 200) {
     let response = await this.page.waitForResponse(
-      response => response.url().endsWith(partialUrlPath) && response.request().method() === method
+      response => response.url().endsWith(endUrlPath) && response.request().method() === method
     );
     // expect created successfully
     expect(response.status()).toBe(expectedStatusCode);

@@ -35,4 +35,5 @@ export const test = base.extend<
 })
 
 test.setTimeout(TIMEOUT)
-dotenv.config({ path: './.env' });
+dotenv.config({path: './.env'});
+

@@ -3,7 +3,7 @@
     {
       "name": "Valid Request - Fetch latest block using eth_getBlockByNumber",
       "method": "POST",
-      "url": "https://site1.moralis-nodes.com/base/1a2161b4019040ad85f4fcdf7bcf8edf",
+      "url": "https://site1.moralis-nodes.com/avalanche/48330e213e79477f84ce2c2f75b76dfc",
       "headers": {
         "content-type": "application/json"
       },
@@ -11,14 +11,17 @@
         "jsonrpc": "2.0",
         "id": 1,
         "method": "eth_getBlockByNumber",
-        "params": ["latest", true]
+        "params": [
+          "latest",
+          true
+        ]
       },
       "expectedStatusCode": 200
     },
     {
       "name": "Invalid Params - Fetch block by non-existent number",
       "method": "POST",
-      "url": "https://site1.moralis-nodes.com/base/1a2161b4019040ad85f4fcdf7bcf8edf",
+      "url": "https://site1.moralis-nodes.com/avalanche/48330e213e79477f84ce2c2f75b76dfc",
       "headers": {
         "content-type": "application/json"
       },
@@ -26,7 +29,48 @@
         "jsonrpc": "2.0",
         "id": 1,
         "method": "eth_getBlockByNumber",
-        "params": ["0x0nonexistent", true]
+        "params": [
+          "0x0nonexistent",
+          true
+        ]
+      },
+      "expectedStatusCode": 500
+    }
+  ],
+  "getTransactionByHash": [
+    {
+      "name": "Valid Request - Fetch transaction by hash",
+      "method": "POST",
+      "url": "https://site1.moralis-nodes.com/avalanche/48330e213e79477f84ce2c2f75b76dfc",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0xea3104948e11dcdecc2ae4cfac6004702d547c4aa404cca4e6ca4243ecc88408"
+        ]
+      },
+      "expectedStatusCode": 200
+    },
+    {
+      "name": "Invalid Params - Fetch transaction with non-existent hash",
+      "method": "POST",
+      "url": "https://site1.moralis-nodes.com/avalanche/48330e213e79477f84ce2c2f75b76dfc",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_getTransactionByHash",
+        "params": [
+          "0x0nonexistenthashvalue"
+        ]
       },
       "expectedStatusCode": 500
     }

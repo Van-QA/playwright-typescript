@@ -25,5 +25,59 @@
       "headers": {},
       "expectedStatusCode": 403
     }
+  ],
+  "getNFTDetailsTestCases": [
+    {
+      "name": "Valid API Key - Get NFT details with default address",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/0x524cab2ec69124574082676e6f654a18df49a048/nft?chain=eth&format=decimal&media_items=false",
+      "headers": {
+        "X-API-Key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImRiNzFmMDljLTQ0ODYtNGU3ZC04MDcwLTkyMTRiMjdhZGQ4YSIsIm9yZ0lkIjoiNDA5MTQ1IiwidXNlcklkIjoiNDIwNDMwIiwidHlwZSI6IlBST0pFQ1QiLCJ0eXBlSWQiOiIzMWM5NGEwMS1lNjcyLTRjYzctYWU1OC02OWRlZjM5NzYyZWEiLCJpYXQiOjE3MjcyNzM1NzIsImV4cCI6NDg4MzAzMzU3Mn0._PAUfMzw8cbiO0_evRARSgQCAjmN6v3Mm3N6k2MEphs"
+      },
+      "expectedStatusCode": 200
+    },
+    {
+      "name": "Valid API Key - Get NFT with users address",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/0x7BCC7091CAeE600A397eEb9529d281A20dC39c4f/nft?chain=eth&format=decimal&media_items=false",
+      "headers": {
+        "X-API-Key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImRiNzFmMDljLTQ0ODYtNGU3ZC04MDcwLTkyMTRiMjdhZGQ4YSIsIm9yZ0lkIjoiNDA5MTQ1IiwidXNlcklkIjoiNDIwNDMwIiwidHlwZSI6IlBST0pFQ1QiLCJ0eXBlSWQiOiIzMWM5NGEwMS1lNjcyLTRjYzctYWU1OC02OWRlZjM5NzYyZWEiLCJpYXQiOjE3MjcyNzM1NzIsImV4cCI6NDg4MzAzMzU3Mn0._PAUfMzw8cbiO0_evRARSgQCAjmN6v3Mm3N6k2MEphs"
+      },
+      "expectedStatusCode": 200
+    },
+    {
+      "name": "Invalid API Key - Unauthorized",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/0x524cab2ec69124574082676e6f654a18df49a048/nft?chain=eth&format=decimal&media_items=false",
+      "headers": {
+        "X-API-Key": "invalid_api_key"
+      },
+      "expectedStatusCode": 401
+    },
+    {
+      "name": "Missing API Key - Forbidden",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/0x524cab2ec69124574082676e6f654a18df49a048/nft?chain=eth&format=decimal&media_items=false",
+      "headers": {},
+      "expectedStatusCode": 403
+    },
+    {
+      "name": "Invalid NFT Contract Address - Not Found",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/0xinvalidaddress/nft?chain=eth&format=decimal&media_items=false",
+      "headers": {
+        "X-API-Key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImRiNzFmMDljLTQ0ODYtNGU3ZC04MDcwLTkyMTRiMjdhZGQ4YSIsIm9yZ0lkIjoiNDA5MTQ1IiwidXNlcklkIjoiNDIwNDMwIiwidHlwZSI6IlBST0pFQ1QiLCJ0eXBlSWQiOiIzMWM5NGEwMS1lNjcyLTRjYzctYWU1OC02OWRlZjM5NzYyZWEiLCJpYXQiOjE3MjcyNzM1NzIsImV4cCI6NDg4MzAzMzU3Mn0._PAUfMzw8cbiO0_evRARSgQCAjmN6v3Mm3N6k2MEphs"
+      },
+      "expectedStatusCode": 404
+    },
+    {
+      "name": "Invalid Chain Parameter - Bad Request",
+      "method": "GET",
+      "url": "https://deep-index.moralis.io/api/v2.2/0x524cab2ec69124574082676e6f654a18df49a048/nft?chain=invalid_chain&format=decimal&media_items=false",
+      "headers": {
+        "X-API-Key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImRiNzFmMDljLTQ0ODYtNGU3ZC04MDcwLTkyMTRiMjdhZGQ4YSIsIm9yZ0lkIjoiNDA5MTQ1IiwidXNlcklkIjoiNDIwNDMwIiwidHlwZSI6IlBST0pFQ1QiLCJ0eXBlSWQiOiIzMWM5NGEwMS1lNjcyLTRjYzctYWU1OC02OWRlZjM5NzYyZWEiLCJpYXQiOjE3MjcyNzM1NzIsImV4cCI6NDg4MzAzMzU3Mn0._PAUfMzw8cbiO0_evRARSgQCAjmN6v3Mm3N6k2MEphs"
+      },
+      "expectedStatusCode": 400
+    }
   ]
 }
