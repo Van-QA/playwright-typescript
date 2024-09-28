@@ -42,7 +42,7 @@ async function testPostRequest(testCase, request: APIRequestContext, nodeUrl) {
 
 urls.forEach((nodeUrl) => {
   postRequestTestData.getBlockByNumber.forEach(testCase => {
-    test(`POST API tests 1 - ${testCase.name} - ${nodeUrl}`, async ({request}) => {
+    test(`Get Block By Number - ${testCase.name} - ${nodeUrl}`, async ({request}) => {
       let responseJson = await testPostRequest(testCase, request, nodeUrl);
       if (testCase.expectedStatusCode === 200) {
         expect(responseJson.result).toHaveProperty('number');
@@ -53,7 +53,7 @@ urls.forEach((nodeUrl) => {
   });
 
   postRequestTestData.getTransactionByHash.forEach(testCase => {
-    test(`POST API tests 2 - ${testCase.name} - ${nodeUrl}`, async ({request}) => {
+    test(`Get Transaction By Hash - ${testCase.name} - ${nodeUrl}`, async ({request}) => {
       testCase.body = {
         ...testCase.body,
         "params": transaction_hash ? [transaction_hash] : testCase.body?.params // Prioritize transaction_hash if defined

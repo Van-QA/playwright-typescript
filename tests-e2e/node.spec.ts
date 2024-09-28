@@ -8,21 +8,12 @@ test.skip('User can login and logout', async ({loginPage, homePage}) => {
   await loginPage.login(process.env.EMAIL, process.env.PASSWORD)
 });
 
-
-test('Get API key from UI', async ({apiKeysPage}) => {
-  await apiKeysPage.visit()
-  let responseJson = await apiKeysPage.waitForAPI('GET', '/project/secret', 200);
-
-  writeToEnvFile('API_KEY', responseJson["0"].secret);
-});
-
-
-test('User can create node', async ({apiKeysPage, nodePage}) => {
+test('User can create node', async ({nodePage}) => {
   await nodePage.visit()
   await nodePage.waitForAPI('GET', '/project/nodes', 200);
   await nodePage.createNewNode()
 
-  let responseJson = await apiKeysPage.waitForAPI('POST', '/project/nodes', 201);
+  let responseJson = await nodePage.waitForAPI('POST', '/project/nodes', 201);
   await expect(nodePage.page.locator('section:has-text("Fetching your Nodes")')).not.toBeVisible();
 
   const nodeUrlInputFields = await nodePage.page.locator(`input[value*="${responseJson.key}"]`).all();
@@ -36,7 +27,7 @@ test('User can create node', async ({apiKeysPage, nodePage}) => {
   writeToEnvFile('NODE_URLS', urlsArray.join(','));
 })
 
-test('User can delete node', async ({homePage, nodePage}, testInfo) => {
+test('User can delete node', async ({nodePage}, testInfo) => {
   await nodePage.visit()
   let responseJson = await nodePage.waitForAPI('GET', '/project/nodes', 200);
 
