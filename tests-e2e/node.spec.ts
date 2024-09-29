@@ -14,7 +14,7 @@ test('User can create node', async ({nodePage}) => {
   await nodePage.createNewNode()
 
   let responseJson = await nodePage.waitForAPI('POST', '/project/nodes', 201);
-  await expect(nodePage.page.locator('section:has-text("Fetching your Nodes")')).not.toBeVisible();
+  await nodePage.waitForFetchingNode()
 
   const nodeUrlInputFields = await nodePage.page.locator(`input[value*="${responseJson.key}"]`).all();
 
@@ -34,10 +34,7 @@ test('User can delete node', async ({nodePage}, testInfo) => {
   let nodeCount = responseJson.length
   // Check if the length of the response is greater than or equal to 2
   if (nodeCount >= 1) {
-    // Delete the first node
-    await nodePage.page.locator('button[aria-expanded="false"]').first().click()
-    await nodePage.page.locator('button:has(svg[data-icon="trash"])').first().click()
-    await nodePage.page.locator('button[data-testid="mui-button-destructive"]:has-text("Delete")').click()
+    await nodePage.deleteNode()
     responseJson = await nodePage.waitForAPI('GET', '/project/nodes', 200);
     expect(responseJson.length).toEqual(nodeCount - 1)
   } else {

@@ -11,9 +11,9 @@ bonus.
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Folder Structure](#folder-structure)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Folder Structure](#folder-structure)
 
 ## Project Overview
 
@@ -65,6 +65,54 @@ This project automates two main scenarios using Playwright and TypeScript:
 
 ---
 
+## Folder Structure
+
+### 1. `config/`
+- **`constants.ts`**: Stores constant values used throughout the project.
+- **`fixtures.ts`**: Contains fixture data for use in the tests.
+
+### 2. `data/`
+- **`getRequestTestData.json`**: Test data specific to GET requests.
+- **`postRequestTestData.json`**: Test data specific to POST requests.
+
+### 3. `helpers/`
+- **`apiHelpers.ts`**: Contains helper functions for API interactions.
+- **`fileHelpers.ts`**: Provides utility functions for file handling.
+
+### 4. `pages/`
+- **`apiKeysPage.ts`**: Page object for the API Keys section of the Moralis Admin UI.
+- **`basePage.ts`**: Base page object containing shared methods for page interactions.
+- **`homePage.ts`**: Page object for the home page of the Admin UI.
+- **`loginPage.ts`**: Page object for the login page of the Admin UI.
+- **`nodePage.ts`**: Page object for managing nodes in the Admin UI.
+
+### 5. `playwright/`
+- **`.auth/`**: Contains the `.auth` file for session data.
+- **`user.json`**: Stores user session details for reusability in tests.
+
+### 6. `tests-api/`
+- **`getRequests.test.ts`**: Contains tests for GET API requests such as `blockNumber` and `getWalletNFTs`.
+- **`postRequests.test.ts`**: Contains tests for POST API requests like `getBlockByNumber` and `getTransactionByHash`.
+
+### 7. `tests-e2e/`
+- **`apiKeys.spec.ts`**: E2E test to retrieve an API Key from the Admin UI.
+- **`node.spec.ts`**: E2E test to create and delete a Node in the Admin UI.
+
+### 8. Root Files
+- **`.env`**: Contains environment variables shared across different tests.
+- **`playwright.config.ts`**: Playwright configuration file for setting up the test environment (e.g., browser, timeouts).
+
+---
+
+## Running the Tests
+
+### Prerequisites
+- Install Node.js.
+- Install project dependencies:
+  ```bash
+  npm install
+
+
 ## Prerequisites
 
 - Node.js (>=16.x)
@@ -81,8 +129,7 @@ If you want to run test locally, please follow these steps:
 2. Make sure you have `node.js` installed. If you don't, please
    visit [official website](https://nodejs.org/en/download/) for instructions
 3. Run `npm install` to install node modules
-4. That's it, now you can run tests with `npm run test` - it will run test in 3 browsers (chromium, firefox, webkit) in
-   parallel.
+4. That's it, now you can run tests with `npm run test`
 
 If you want to run it in headed mode, then change configuration to `headless: true` in `playwright.config.js`
 
