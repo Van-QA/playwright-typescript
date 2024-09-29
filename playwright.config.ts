@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
     baseURL: 'https://admin.moralis.io', // default URL to run test
 
     // Browser options
-    headless: false,
+    headless: true,
 
     // Artifacts
     screenshot: 'only-on-failure',

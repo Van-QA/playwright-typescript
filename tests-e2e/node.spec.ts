@@ -2,11 +2,30 @@ import {expect} from '@playwright/test';
 import {test} from '../config/fixtures'
 import {writeToEnvFile} from '../helpers/fileHelpers'
 
-test.skip('User can login and logout', async ({loginPage, homePage}) => {
+// Suggestion
+// test.describe.configure({ mode: 'serial' });
+
+test.skip('User can login', async ({loginPage, homePage}) => {
   await homePage.visit();
   expect(await homePage.isLoggedIn()).toBeFalsy();
   await loginPage.login(process.env.EMAIL, process.env.PASSWORD)
 });
+
+test('User can delete node', async ({nodePage}, testInfo) => {
+  await nodePage.visit()
+  let responseJson = await nodePage.waitForAPI('GET', '/project/nodes', 200);
+
+  let nodeCount = responseJson.length
+  // Check if the length of the response is greater than or equal to 2
+  if (nodeCount >= 1) {
+    await nodePage.deleteNode()
+    responseJson = await nodePage.waitForAPI('GET', '/project/nodes', 200);
+    expect(responseJson.length).toEqual(nodeCount - 1)
+  } else {
+    testInfo.skip(true, 'Skipping because no node available');
+    testInfo.status = "skipped"
+  }
+})
 
 test('User can create node', async ({nodePage}) => {
   await nodePage.visit()
@@ -27,18 +46,4 @@ test('User can create node', async ({nodePage}) => {
   writeToEnvFile('NODE_URLS', urlsArray.join(','));
 })
 
-test('User can delete node', async ({nodePage}, testInfo) => {
-  await nodePage.visit()
-  let responseJson = await nodePage.waitForAPI('GET', '/project/nodes', 200);
 
-  let nodeCount = responseJson.length
-  // Check if the length of the response is greater than or equal to 2
-  if (nodeCount >= 1) {
-    await nodePage.deleteNode()
-    responseJson = await nodePage.waitForAPI('GET', '/project/nodes', 200);
-    expect(responseJson.length).toEqual(nodeCount - 1)
-  } else {
-    testInfo.skip(true, 'Skipping because no node available');
-    testInfo.status = "skipped"
-  }
-})
