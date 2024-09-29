@@ -1,0 +1,45 @@
+name: Playwright Tests
+
+# Trigger the workflow on push, pull request, or manually with workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (uses the latest stable version by default)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Install Playwright dependencies (browsers)
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      # Step 5: Run Playwright tests
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      # Step 6: Upload Playwright test results
+      - name: Upload Playwright test results
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: playwright-report/
